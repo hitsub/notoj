@@ -81,20 +81,81 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 0 200px;
 }
 
 /*Customize*/
 
 .just {
-  display: flex;
-  flex-flow: row nowrap;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .just > li {
-  flex: 1 auto;
-  text-align: center;
-  white-space: nowrap;
+    flex: 1 auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.btn-circle.btn-lg {
+    width: 60px;
+    height: 60px;
+    padding: 13px 10px;
+    font-size: 18px;
+    border-radius: 30px;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+
+.bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 3%;
+    text-align: center;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #e2e2e2;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+.container .text-muted {
+    margin: 20px 0;
 }
 
 /* Wrapper for page content to push down footer */
@@ -4383,6 +4444,7 @@ th {
     width: 100%;
     max-width: 100%;
     margin-bottom: 24px;
+    border-bottom: 2px solid #ddd;
 }
 .table > thead > tr > th,
 .table > thead > tr > td,
